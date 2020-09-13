@@ -1,53 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-</head>
-<body>
-<Div class="clearfix cotainer">
-    <a href="highscore.html" class="highscore_page">View High Score</a>
-    <p class="timer_info">Time:<span id="timer">0</span></p>
-</Div>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>JS Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<section class="container">
-<div id="intro_info" class="row">
-<p class="col-12">This is where the introduction information will go</p>
-<button id="start_button" class="col-1 text-centre">Start Buttom</button>
-</div>
-</section>
+    <!-- Bring in the bootstrap CSS via the Bootstrap CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
 
-<section class="container">
-<div class="questions_container row">
-<div class="question col-8">Question will go here</div>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+  <body>
+    <!-- Container Div -->
+    <div class="container">
+      
+      <!-- set up nav bar for highscores link and current score -->
+      <nav class="navbar">
+        <a href="highscores.html"><div class="navbar-item">View High Scores</div></a>
+        <span class="navbar-text">Time: <span id="score"></span></span>
+      </nav>
+      <!-- heading row -->
+      <div class="row" id="rwContentArea">
+        <!-- only 1 row -->
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <!-- 4 dives in the column that are shown/hidden as required -->
+          <div class="welcome" id="welcome">
+            <h2>Coding Quiz Challenge</h2>
+            <br />
+            <h6>Try to answer the following code related questions within the time limit. Keep in mind that incorrect answers will penalise your score/time by 10 seconds!</h6>
+            <br />
+            <button class="btn btn-primary" id="startQuiz">Start Quiz</button>
+          </div>
+          <div class="questions" id="questionsDiv">
+            <h4>Question <span id="questionText">0</span></h4>
+            <ul id="answerList" style="list-style-type: none"></ul>
+          </div>
+          <form id="resultsForm" method="POST">
+            <h2>All Done!</h2>
+            <p>Your final score is: <span id="finalScore">0</span></p>
+            <label for="initialsText">Enter your initials:</label>
+            <input type="text" name="initialsText" id="initialsText" />
+            <button class="btn btn-primary" id="submitScore">Submit</button>
+          </form>
+          <div class="result" id="resultsDiv">
+            <hr />
+            <p><span id="answerResult"></span></p>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+    <!-- container -->
 
-<div id="answers_continer">
- <button type="button" class="col-8 answer_button">Answer 1</button>
- <button type="button"class="col-8 answer_button">Answer 2</button>
- <button type="button"class="col-8 answer_button">Answer 3</button>
- <button type="button"class="col-8 answer_button">Answer 4</button>
-</div>
-
-</div>
-</section>
-
-<section class="container">
-<div class="end_of_quiz_container row">
-    <h3 class="col-12">All Done !</h3>
-    <br>
-    <p class="col-12">Your High Score Is <span>Amount</span></p>
-    <br>
-    <form action="" class="col-12">
-        <label for="User_initials">Enter your Initials</label>
-        <textarea class="form_control" id="User_initials"></textarea>
-    </form>
-
-</div>
-
-</section>
-    
-</body>
+    <script src="quiz-conts.js"></script>
+    <script src="function.js"></script>
+  </body>
 </html>
