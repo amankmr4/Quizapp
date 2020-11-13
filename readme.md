@@ -21,17 +21,17 @@ So, i'm able to track the highscores of the the users.
 ## Project Demo
 
 
-![screentshot 1](././Screenshots/screenshot1.JPG)
+![screentshot 1](/Screenshots/screenshot1.JPG)
 
-![screentshot 2](./Screenshots/screenshot2.JPG)
+![screentshot 2](/Screenshots/screenshot2.JPG)
 
-![screentshot 3](./Screenshots/screenshot3.JPG)
+![screentshot 3](/Screenshots/screenshot3.JPG)
 
-![screentshot 4](./Screenshots/screenshot4.JPG)
+![screentshot 4](/Screenshots/screenshot4.JPG)
 
-![screentshot 5](./Screenshots/screenshot5.JPG)
+![screentshot 5](/Screenshots/screenshot5.JPG)
 
-![screentshot 6](./Screenshots/screenshot6.JPG)
+![screentshot 6](/Screenshots/screenshot6.JPG)
 
 ## License
 
