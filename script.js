@@ -100,7 +100,8 @@ function scoreSubmit(event) {
             scoresArray = storedHighScores;
         }
         scoresArray.push(user)
-        localStorage.setItem("highscores", JSON.stringify(scoresArray))
+        localStorage.setItem("highscores", JSON.stringify(scoresArray));
+        location.reload();
     }
 
 }
