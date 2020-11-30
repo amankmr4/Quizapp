@@ -86,6 +86,7 @@ function startQuiz() {
 }
 
 function scoreSubmit(event) {
+    event.preventDefault();
     if (initials.value == "") {
         alert("Please enter something into the text box")
         initials.focus();
